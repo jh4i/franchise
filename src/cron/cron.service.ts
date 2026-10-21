@@ -43,6 +43,7 @@ export class CronService {
     const currentLastProcessedId =
       this.lastProcessedHeaderId;
 
+      //BEGIN TRANSACTION
     const trx = await this.db.transaction();
 
     try {
